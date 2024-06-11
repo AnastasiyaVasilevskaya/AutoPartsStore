@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Неактивное состояние -->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#AE000000" />
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+
+    <!-- Активное состояние и состояние при фокусе (нажатии) -->
+    <item android:state_enabled="true" >
+        <shape>
+            <solid android:color="#1E1E1E" />
+            <corners android:radius="30dp" />
+        </shape>
+    </item>
+
+</selector>

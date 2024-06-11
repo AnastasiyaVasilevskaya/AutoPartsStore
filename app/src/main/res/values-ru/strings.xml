@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">AutoND</string>
+    <string name="welcome">Добро пожаловать!</string>
+    <string name="authorization">Регистрация</string>
+    <string name="email">Электронная почта</string>
+    <string name="button_login">Продолжить</string>
+    <string name="button_signup">Зарегистрироваться</string>
+    <string name="email_annotation">Мы вышлем вам электронное письмо с кодом подтверждения</string>
+    <string name="button_next_hint">Нажав на кнопку ЗАРЕГИСТРИРОВАТЬСЯ, я соглашаюсь с условиями использования приложения</string>
+    <string name="required">Обязательное поле</string>
+    <string name="password">Пароль</string>
+    <string name="correct">Верно</string>
+    <string name="invalid_phone_number">Неверный номер телефона</string>
+    <string name="invalid_email">Неверный адрес электронной почты</string>
+    <string name="invalid_password_mess">Неверный пароль. Минимум 6 символов</string>
+    <string name="voiti_v_accaunt">Войти в аккаунт</string>
+    <string name="phone_number">Номер телефона</string>
+    <string name="registration">Регистрация</string>
+    <string name="noaccaunt_signin_text">Нет аккаунта? <font color="#1B369A">Зарегистрируйся</font></string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="user_name">Dmitry</string>
+    <string name="official_brand">Official Brand</string>
+    <string name="see_all">See all</string>
+    <string name="explorer">Explorer</string>
+</resources>

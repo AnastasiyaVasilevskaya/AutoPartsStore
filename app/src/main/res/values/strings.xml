@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">AutoND</string>
+    <string name="welcome">Welcome!</string>
+    <string name="authorization">Registration</string>
+    <string name="email">Email</string>
+    <string name="button_login">Continue</string>
+    <string name="button_signup">SIGN UP</string>
+    <string name="email_annotation">We will send an email with a confirmation code</string>
+    <string name="button_next_hint">By clicking the button SIGN IN I agree to the terms of use of the application</string>
+    <string name="required">Required</string>
+    <string name="password">Password</string>
+    <string name="correct">Correct</string>
+    <string name="invalid_phone_number">Invalid phone number</string>
+    <string name="invalid_email">Invalid email</string>
+    <string name="invalid_password_mess">Invalid password. Minimum 6 characters</string>
+    <string name="voiti_v_accaunt">Log in to your account</string>
+    <string name="phone_number">Phone number</string>
+    <string name="registration">Registration</string>
+    <string name="noaccaunt_signin_text">There is no account? <font color="#1B369A">Sign up</font></string>
+    <string name="welcome_back">Welcome Back</string>
+    <string name="user_name">Dmitry</string>
+    <string name="official_brand">Official Brand</string>
+    <string name="see_all">See all</string>
+    <string name="explorer">Explorer</string>
+</resources>

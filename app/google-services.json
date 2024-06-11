@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "490195016581",
+    "project_id": "autond-8f38f",
+    "storage_bucket": "autond-8f38f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:490195016581:android:1f679ed38275f635eec2ec",
+        "android_client_info": {
+          "package_name": "com.example.autond"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDS3-GHwCsVqGJeNzv7VShUCLn1d9Hr4AI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
