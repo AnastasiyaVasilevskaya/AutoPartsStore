@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">AutoND</string>
+    <string name="app_name">AutoPartsStore</string>
     <string name="welcome">Добро пожаловать!</string>
     <string name="authorization">Регистрация</string>
     <string name="email">Электронная почта</string>
@@ -18,9 +18,22 @@
     <string name="phone_number">Номер телефона</string>
     <string name="registration">Регистрация</string>
     <string name="noaccaunt_signin_text">Нет аккаунта? <font color="#1B369A">Зарегистрируйся</font></string>
-    <string name="welcome_back">Welcome Back</string>
-    <string name="user_name">Dmitry</string>
-    <string name="official_brand">Official Brand</string>
-    <string name="see_all">See all</string>
-    <string name="explorer">Explorer</string>
+    <string name="welcome_back">Здравствуйте, </string>
+    <string name="user_name">Анастасия</string>
+    <string name="categories">Категории</string>
+    <string name="see_all">Все</string>
+    <string name="explorer">Главная</string>
+    <string name="shopping_cart">Корзина</string>
+    <string name="favorite">Избранное</string>
+    <string name="order">Мои заказы</string>
+    <string name="profile">Профиль</string>
+    <string name="title">название</string>
+    <string name="buy_now">Купить сейчас</string>
+    <string name="empty_cart_text">Ваша корзина пуста!</string>
+    <string name="cart">Корзина</string>
+    <string name="recommendation">Рекомендации</string>
+    <string name="subtotal">Промежуточный результат</string>
+    <string name="fee_delivery">Доставка</string>
+    <string name="total">Итоговая сумма</string>
+    <string name="checkout">Перейти к оформлению</string>
 </resources>

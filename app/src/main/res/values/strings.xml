@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">AutoND</string>
+    <string name="app_name">AutoPartsStore</string>
     <string name="welcome">Welcome!</string>
     <string name="authorization">Registration</string>
     <string name="email">Email</string>
@@ -19,7 +19,20 @@
     <string name="noaccaunt_signin_text">There is no account? <font color="#1B369A">Sign up</font></string>
     <string name="welcome_back">Welcome Back</string>
     <string name="user_name">Dmitry</string>
-    <string name="official_brand">Official Brand</string>
+    <string name="categories">Categories</string>
     <string name="see_all">See all</string>
     <string name="explorer">Explorer</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="favorite">Favorite</string>
+    <string name="order">Order</string>
+    <string name="profile">Profile</string>
+    <string name="title">title</string>
+    <string name="buy_now">Buy Now</string>
+    <string name="empty_cart_text">Your Cart is empty</string>
+    <string name="cart">Cart</string>
+    <string name="recommendation">Recommendation</string>
+    <string name="subtotal">Subtotal</string>
+    <string name="fee_delivery">Fee Delivery</string>
+    <string name="total">Total</string>
+    <string name="checkout">Checkout</string>
 </resources>

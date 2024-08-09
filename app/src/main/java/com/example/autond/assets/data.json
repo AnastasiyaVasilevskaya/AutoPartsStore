@@ -1,0 +1,68 @@
+{
+  "Banner": [
+    null,
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/banner1.png?alt=media&token=df49ef5b-c1bc-4d1c-aaae-b419656b3ac5"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/banner2.png?alt=media&token=14cd46fb-2a9f-4a78-9679-63c46580bc48"
+    },
+    {
+      "url": "https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/banner3.png?alt=media&token=0ca0d896-8c5d-4aa5-bbb4-513210b4d0a1"
+    }
+  ],
+  "Category": [
+    null,
+    {
+      "id": 1,
+      "picUrl": "https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/shins.png?alt=media&token=23b76c04-9f4a-4135-90cb-35e62ca18670",
+      "title": "Шины"
+    },
+    {
+      "id": 2,
+      "picUrl": "https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/oil.png?alt=media&token=487c230f-0098-4747-86bf-c38180fbefd0",
+      "title": "Масла и Жидкости"
+    },
+    {
+      "id": 3,
+      "picUrl": "https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/tormoza.png?alt=media&token=d7c8d3eb-8620-46a4-8520-59f3e27449fb",
+      "title": "Тормозные системы"
+    },
+    {
+      "id": 4,
+      "picUrl": "https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/filter.png?alt=media&token=0ed0bfa3-9dac-4ca4-860e-56ae09ec98d5",
+      "title": "Фильтры"
+    }
+  ],
+  "Items": [
+    null,
+    {
+      "description": "Высококачественные летние шины Michelin для безопасного вождения.",
+      "numberInCart": 1,
+      "picUrl": ["https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/item1Michelin.png?alt=media&token=437a1b01-7fbf-4ab0-bafc-440739edd035"],
+      "price": 200,
+      "title": "Летние шины Michelin"
+    },
+    {
+      "description": "Синтетическое моторное масло для легковых автомобилей.",
+      "numberInCart": 2,
+      "picUrl": ["https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/item2Maslo.png?alt=media&token=f4f30a25-a77f-44d3-ad66-a77ac753ef54"],
+      "price": 50,
+      "title": "Моторное масло Castrol 5W-30"
+    },
+    {
+      "description": "Надежные тормозные колодки Brembo для максимальной безопасности.",
+      "numberInCart": 3,
+      "picUrl": ["https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/item3BremboTormoz.png?alt=media&token=d8c35fd5-1dee-49af-9b43-97d3b4f24c80"],
+      "price": 150,
+      "title": "Тормозные колодки Brembo"
+    },
+    {
+      "description": "Надежные тормозные колодки Brembo для максимальной безопасности.",
+      "numberInCart": 4,
+      "picUrl": ["https://firebasestorage.googleapis.com/v0/b/autond-8f38f.appspot.com/o/item4ManFilter.png?alt=media&token=b6230de8-e2e4-441b-90e4-4ca82dca10c9"],
+      "price": 30,
+      "title": "Воздушный фильтр Mann-Filter"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+package com.example.autond.presentation.category
+
+import android.content.Context
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.autond.R
+import com.example.autond.databinding.ViewholderCategoryBinding
+import com.example.autond.domain.entity.CategoryModel
+
+
+class CategoryAdapter(val items: MutableList<CategoryModel>) :
+    RecyclerView.Adapter<CategoryAdapter.CategoryViewHolder>() {
+
+    private var selectedPosition = -1
+    private var lastSelectedPosition = -1
+    private lateinit var context: Context
+
+    override fun onCreateViewHolder(
+        parent: ViewGroup, viewType: Int
+    ): CategoryViewHolder {
+        context = parent.context
+        val binding = ViewholderCategoryBinding.inflate(LayoutInflater.from(context), parent, false)
+        return CategoryViewHolder(binding)
+    }
+
+    override fun onBindViewHolder(holder: CategoryViewHolder, position: Int) {
+        val item = items[position]
+        holder.binding.title.text = item.title
+
+        Glide.with(holder.itemView.context)
+            .load(item.picUrl)
+            .into(holder.binding.pic)
+
+        holder.binding.root.setOnClickListener{
+            lastSelectedPosition = selectedPosition
+            selectedPosition = holder.adapterPosition
+            notifyItemChanged(lastSelectedPosition)
+            notifyItemChanged(selectedPosition)
+        }
+        holder.binding.title.setTextColor(context.resources.getColor(R.color.black))
+        if(selectedPosition == position) {
+            holder.binding.pic.setBackgroundResource(0)
+            holder.binding.mainLayout.setBackgroundResource(R.drawable.background_selected_category)
+
+            holder.binding.title.visibility = View.VISIBLE
+        } else {
+            holder.binding.pic.setBackgroundResource(R.drawable.background_selected_category)
+            holder.binding.mainLayout.setBackgroundResource(0)
+            holder.binding.title.visibility = View.GONE
+        }
+    }
+
+    override fun getItemCount(): Int = items.size
+
+    class CategoryViewHolder(val binding: ViewholderCategoryBinding) :
+        RecyclerView.ViewHolder(binding.root) {
+
+    }
+}
+
+

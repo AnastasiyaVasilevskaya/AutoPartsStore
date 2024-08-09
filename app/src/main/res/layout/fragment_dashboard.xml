@@ -4,11 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/background"
     tools:context=".presentation.dashboard.DashboardFragment">
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@id/nav_bar"
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -19,14 +22,15 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="18dp"
                 android:layout_marginEnd="24dp"
                 android:orientation="horizontal">
 
                 <LinearLayout
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="1"
+                    android:layout_marginStart="4dp"
                     android:orientation="vertical">
 
                     <TextView
@@ -49,22 +53,24 @@
                     android:id="@+id/imageView"
                     android:layout_width="42dp"
                     android:layout_height="42dp"
-                    android:layout_marginEnd="16dp"
-                    android:padding="8dp"
+                    android:layout_marginEnd="8dp"
+                    android:padding="12dp"
+                    android:visibility="gone"
                     android:src="@drawable/bell" />
 
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="42dp"
                     android:layout_height="42dp"
-                    android:padding="8dp"
-                    android:src="@drawable/search" />
+                    android:padding="12dp"
+                    android:visibility="gone"
+                    android:src="@drawable/ic_search" />
             </LinearLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="180dp"
-                android:layout_marginTop="16dp">
+                android:layout_marginTop="10dp">
 
                 <ProgressBar
                     android:id="@+id/progress_bar_banner"
@@ -80,13 +86,14 @@
                     android:id="@+id/viewpager_slider"
                     android:layout_width="match_parent"
                     android:layout_height="160dp"
-                    android:paddingStart="24dp"
-                    android:paddingEnd="24dp"
+                    android:paddingStart="18dp"
+                    android:paddingEnd="18dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <com.tbuonomo.viewpagerdotsindicator.DotsIndicator
+                    android:id="@+id/dot_indicator"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="4dp"
@@ -109,7 +116,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="16dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="24dp"
                 android:orientation="horizontal">
 
@@ -118,9 +125,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="@string/official_brand"
+                    android:text="@string/categories"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="19sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -136,7 +143,7 @@
                 android:layout_height="match_parent">
 
                 <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/view_brand"
+                    android:id="@+id/view_category"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:clipToPadding="false"
@@ -147,14 +154,14 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ProgressBar
-                    android:id="@+id/progress_bar_brand"
+                    android:id="@+id/progress_bar_category"
                     style="?android:attr/progressBarStyle"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/view_brand" />
+                    app:layout_constraintTop_toTopOf="@+id/view_category" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <LinearLayout
@@ -170,9 +177,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="Recommendation"
+                    android:text="@string/recommendation"
                     android:textColor="@color/black"
-                    android:textSize="18sp"
+                    android:textSize="19sp"
                     android:textStyle="bold" />
 
                 <TextView
@@ -190,7 +197,8 @@
                 <androidx.recyclerview.widget.RecyclerView
                     android:id="@+id/view_popular"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="16dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -209,24 +217,27 @@
     </ScrollView>
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:id="@+id/nav_bar"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginStart="12dp"
+        android:layout_marginTop="4dp"
         android:layout_marginEnd="12dp"
-        android:layout_marginBottom="24dp"
+        android:layout_marginBottom="18dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
+
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="bottom"
-            android:background="@drawable/blue_button_background_selector">
-            
+            android:background="@drawable/background_nav_bar">
+
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_marginBottom="8dp"
-                android:layout_height="match_parent">
+                android:layout_height="match_parent"
+                android:layout_marginBottom="8dp">
 
                 <LinearLayout
                     android:layout_width="0dp"
@@ -239,7 +250,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:src="@drawable/explore" />
+                        android:src="@drawable/ic_explore" />
 
                     <TextView
                         android:id="@+id/text_explorer"
@@ -254,6 +265,7 @@
                 </LinearLayout>
 
                 <LinearLayout
+                    android:id="@+id/cart_button"
                     android:layout_width="0dp"
                     android:layout_height="match_parent"
                     android:layout_weight="0.2"
@@ -264,14 +276,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:src="@drawable/shopping_cart" />
+                        android:src="@drawable/ic_shopping_cart" />
 
                     <TextView
                         android:id="@+id/textView62"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="@string/explorer"
+                        android:text="@string/shopping_cart"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -288,14 +300,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:src="@drawable/favorite_nav_bar" />
+                        android:src="@drawable/ic_favorite" />
 
                     <TextView
                         android:id="@+id/textView63"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="@string/explorer"
+                        android:text="@string/favorite"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -312,14 +324,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:src="@drawable/orders" />
+                        android:src="@drawable/ic_orders" />
 
                     <TextView
                         android:id="@+id/textView64"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="@string/explorer"
+                        android:text="@string/order"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="10sp" />
@@ -336,14 +348,14 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="8dp"
-                        android:src="@drawable/person" />
+                        android:src="@drawable/ic_person" />
 
                     <TextView
                         android:id="@+id/textView65"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
-                        android:text="@string/explorer"
+                        android:text="@string/profile"
                         android:textAlignment="center"
                         android:textColor="@color/white"
                         android:textSize="10sp" />

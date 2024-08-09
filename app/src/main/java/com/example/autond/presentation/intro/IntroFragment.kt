@@ -1,4 +1,4 @@
-package com.example.autond.presentation.fragment
+package com.example.autond.presentation.intro
 
 import android.animation.AnimatorSet
 import android.animation.ObjectAnimator
@@ -63,7 +63,7 @@ class IntroFragment : Fragment() {
 
                     // Анимация вращения колеса
                     val rotationAnimator =
-                        ObjectAnimator.ofFloat(binding.wheelIntro, "rotation", 0f, 3600f).apply {
+                        ObjectAnimator.ofFloat(binding.wheelIntro, "rotation", 0f, 3240f).apply {
                             duration = 4000 // Длительность 4 секунды
                         }
 

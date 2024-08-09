@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/introFragment"
-        android:name="com.example.autond.presentation.fragment.IntroFragment"
+        android:name="com.example.autond.presentation.intro.IntroFragment"
         android:label="Intro Fragment"
         tools:layout="@layout/fragment_intro">
         <action
@@ -44,5 +44,33 @@
         android:id="@+id/dashboardFragment"
         android:name="com.example.autond.presentation.dashboard.DashboardFragment"
         android:label="Dashboard Fragment"
-        tools:layout="@layout/fragment_dashboard" />
+        tools:layout="@layout/fragment_dashboard">
+        <action
+            android:id="@+id/action_dashboardFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_dashboardFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.autond.presentation.detail.DetailFragment"
+        android:label="fragment_detail">
+        <argument
+            android:name="item"
+            app:argType="com.example.autond.domain.entity.ItemModel" />
+        <action
+            android:id="@+id/action_detailFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.example.autond.presentation.cart.CartFragment"
+        android:label="fragment_cart">
+
+    </fragment>
+
 </navigation>

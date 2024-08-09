@@ -1,4 +1,4 @@
-package com.example.autond.presentation.dashboard
+package com.example.autond.presentation.banner
 
 import android.content.Context
 import android.view.LayoutInflater
@@ -25,14 +25,14 @@ class SliderAdapter(
 
     override fun onCreateViewHolder(
         parent: ViewGroup, viewType: Int
-    ): SliderAdapter.SliderViewHolder {
+    ): SliderViewHolder {
         context = parent.context
         val view = LayoutInflater.from(parent.context)
             .inflate(R.layout.slider_item_container, parent, false)
         return SliderViewHolder(view)
     }
 
-    override fun onBindViewHolder(holder: SliderAdapter.SliderViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: SliderViewHolder, position: Int) {
         holder.setImage(sliderItems[position], context)
         if (position == sliderItems.lastIndex - 1) {
             viewPager2.post(runnable)
@@ -43,7 +43,7 @@ class SliderAdapter(
 
 
     class SliderViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        private val imageView: ImageView = itemView.findViewById(R.id.imageSlide)
+        private val imageView: ImageView = itemView.findViewById(R.id.image_slide)
 
         fun setImage(sliderItems: SliderModel, context: Context) {
             val requestOptions = RequestOptions().transform(CenterInside())
